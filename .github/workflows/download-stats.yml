@@ -1,0 +1,58 @@
+name: Download-Statistik zu Discord
+
+on:
+  schedule:
+    # Montags 18:00 Berlin. GitHub rechnet in UTC, daher zwei Zeiten
+    # (Sommerzeit = 16:00 UTC, Winterzeit = 17:00 UTC). Das Skript
+    # postet nur bei dem Lauf, der in Berlin wirklich 18 Uhr ist.
+    - cron: "0 16 * * 1"
+    - cron: "0 17 * * 1"
+  workflow_dispatch: # Button "Run workflow" zum manuellen Testen
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Statistik holen und posten
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          REPO: ${{ github.repository }}
+          RELEASE_TAG: v0.9.9.53
+          EVENT: ${{ github.event_name }}
+        run: |
+          python3 - << 'PY'
+          import json, os, sys, urllib.request
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          now = datetime.now(ZoneInfo("Europe/Berlin"))
+          if os.environ["EVENT"] == "schedule" and now.hour != 18:
+              print(f"Berlin ist {now:%H:%M}, nicht 18 Uhr - übersprungen.")
+              sys.exit(0)
+
+          tag = os.environ["RELEASE_TAG"]
+          req = urllib.request.Request(
+              f"https://api.github.com/repos/{os.environ['REPO']}/releases/tags/{tag}",
+              headers={"Authorization": f"Bearer {os.environ['GITHUB_TOKEN']}",
+                       "Accept": "application/vnd.github+json"})
+          assets = json.load(urllib.request.urlopen(req, timeout=15)).get("assets", [])
+
+          total = sum(a["download_count"] for a in assets)
+          lines = [f"📊 **Krottohegl {tag.lstrip('v')} — Download-Statistik**",
+                   f"_{now:%d.%m.%Y %H:%M} (Berlin)_", ""]
+          lines += [f"• **{a['name']}**: `{a['download_count']:,}`" for a in assets]
+          lines.append(f"\n**Gesamt**: `{total:,}` Downloads")
+          msg = "\n".join(lines)
+          print(msg)
+
+          body = json.dumps({"content": msg, "username": "Krottohegl Release Bot"}).encode()
+          urllib.request.urlopen(urllib.request.Request(
+              os.environ["DISCORD_WEBHOOK"], data=body,
+              headers={"Content-Type": "application/json", "User-Agent": "KrottoheglBot"}),
+              timeout=15)
+          print("✅ Discord gepostet")
+          PY
