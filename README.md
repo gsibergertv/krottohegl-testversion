@@ -5,7 +5,7 @@ Baue ein Dorf auf, versorge die Bewohner und halte im Endsturm so lange wie mög
 
 ## Aktuelle Version
 
-**0.9.9.53** – Download unter [Releases](https://github.com/gsibergertv/krottohegl-testversion/releases/latest).
+**0.9.9.54** (mit Online-Bestenliste) – Download unter [Releases](https://github.com/gsibergertv/krottohegl-testversion/releases/latest).
 
 ## Steuerung (Grundlagen)
 

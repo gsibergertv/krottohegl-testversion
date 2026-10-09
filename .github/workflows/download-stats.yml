@@ -21,7 +21,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
           REPO: ${{ github.repository }}
-          RELEASE_TAG: v0.9.9.53
+          RELEASE_TAG: v0.9.9.54
           EVENT: ${{ github.event_name }}
         run: |
           python3 - << 'PY'
