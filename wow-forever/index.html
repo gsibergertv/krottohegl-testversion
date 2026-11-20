@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Senioren Gaming – WoW Forever</title>
+<style>
+  :root { --bg:#14110d; --panel:#211c15; --gold:#f2c14e; --text:#e8e0d0; --muted:#8c8472; --green:#4cd964; --line:#3a3226; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.5 Georgia, serif; }
+  header { text-align:center; padding:48px 16px 24px; border-bottom:2px solid var(--line); background:linear-gradient(#0d2a14,var(--bg)); }
+  h1 { margin:0; color:var(--gold); font-size:2.4rem; letter-spacing:.05em; }
+  header p { margin:8px 0 0; color:var(--muted); }
+  main { max-width:900px; margin:0 auto; padding:24px 16px 48px; }
+  h2 { color:var(--gold); border-bottom:1px solid var(--line); padding-bottom:6px; }
+  .controls { display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin:16px 0; }
+  input[type=search], select { background:var(--panel); color:var(--text); border:1px solid var(--line); padding:8px 10px; border-radius:4px; font:inherit; }
+  label { color:var(--muted); }
+  table { width:100%; border-collapse:collapse; background:var(--panel); }
+  th, td { text-align:left; padding:8px 10px; border-bottom:1px solid var(--line); }
+  th { color:var(--gold); cursor:pointer; user-select:none; }
+  tr.offline td { color:var(--muted); }
+  .on { color:var(--green); }
+  .table-wrap { overflow-x:auto; }
+  footer { text-align:center; color:var(--muted); padding:24px 16px; font-size:.85rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Senioren Gaming</h1>
+  <p>Gilde auf WoW Forever · Gemütlich spielen, gemeinsam Berufe leveln</p>
+</header>
+<main>
+  <section>
+    <h2>Mitglieder</h2>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Name, Rang oder Beruf suchen …">
+      <select id="rank"><option value="">Alle Ränge</option></select>
+      <label><input id="offline" type="checkbox" checked> Offline-Mitglieder anzeigen</label>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th data-k="level">Stufe</th><th data-k="name">Name</th><th data-k="status">Zone / zuletzt online</th><th data-k="rank">Rang</th><th data-k="note">Notiz / Berufe</th>
+        </tr></thead>
+        <tbody id="rows"></tbody>
+      </table>
+    </div>
+    <p id="count" style="color:var(--muted)"></p>
+  </section>
+</main>
+<footer>Stand laut Gildenfenster. Namen teils gekürzt. Daten oben im Skript in <code>members</code> pflegen.</footer>
+<script>
+const members = [
+  { level:49, name:"Bruce Willess", status:"Die Hügel von…", online:true,  rank:"Offizier", note:"" },
+  { level:43, name:"Nelumbo L…",    status:"Flusslande",     online:true,  rank:"Offizier", note:"Bergbau und Sc…" },
+  { level:43, name:"Fearly Gran…",  status:"3 Stunden",      online:false, rank:"Gildenmeister", note:"Schneider / VZ" },
+  { level:41, name:"Sam Pelegri…",  status:"19 Stunden",     online:false, rank:"Offizier", note:"Bergbau schmied" },
+  { level:36, name:"Bingsi Schil…", status:"23 Stunden",     online:false, rank:"Offizier", note:"Bergbau und Sc…" },
+  { level:36, name:"Eisblock Fr…",  status:"21 Stunden",     online:false, rank:"Offizier", note:"Schneiderei + V…" },
+  { level:34, name:"Alishaa Glu…",  status:"Arathihochland", online:true,  rank:"Offizier", note:"Kräuterkunde /…" },
+  { level:34, name:"Lunara Mo…",    status:"Alteracgebirge", online:true,  rank:"Offizier", note:"Kürschner / Leder" },
+  { level:31, name:"Genz Lau",      status:"Dun Morogh",     online:true,  rank:"Veteran",  note:"Berufe?" },
+  { level:23, name:"Klothilde Cl…", status:"3 Tagen",        online:false, rank:"Offizier", note:"" },
+  { level:21, name:"Dave Danger",   status:"13 Tagen",       online:false, rank:"Offizier", note:"Alchi & Kräuter" },
+  { level:11, name:"Lux Frostbri…", status:"3 Tagen",        online:false, rank:"Offizier", note:"" },
+  { level:6,  name:"Danny Doo…",    status:"6 Tagen",        online:false, rank:"Offizier", note:"neuer main" },
+];
+const $ = id => document.getElementById(id);
+let sortKey = "level", sortDir = -1;
+[...new Set(members.map(m => m.rank))].forEach(r => $("rank").add(new Option(r, r)));
+function render() {
+  const q = $("q").value.toLowerCase(), rk = $("rank").value, off = $("offline").checked;
+  const list = members
+    .filter(m => (off || m.online) && (!rk || m.rank === rk) && (m.name + m.rank + m.note).toLowerCase().includes(q))
+    .sort((a, b) => {
+      const k = sortKey === "status" ? "status" : sortKey;
+      return (a[k] > b[k] ? 1 : a[k] < b[k] ? -1 : 0) * sortDir;
+    });
+  $("rows").innerHTML = list.map(m =>
+    `<tr class="${m.online ? "" : "offline"}"><td>${m.level}</td><td>${m.name}</td>` +
+    `<td>${m.online ? '<span class="on">● </span>' : ""}${m.status}</td><td>${m.rank}</td><td>${m.note}</td></tr>`).join("");
+  $("count").textContent = `${list.length} von ${members.length} Mitgliedern · ${members.filter(m => m.online).length} online`;
+}
+document.querySelectorAll("th").forEach(th => th.onclick = () => {
+  const k = th.dataset.k; sortDir = sortKey === k ? -sortDir : 1; sortKey = k; render();
+});
+["q","rank","offline"].forEach(id => $(id).oninput = render);
+render();
+</script>
+</body>
+</html>
