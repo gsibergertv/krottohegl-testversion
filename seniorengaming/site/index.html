@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=b5353938-8bda-4b61-809d-57067c55ce9c
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d12">
+  <meta name="description" content="Senioren Gaming – World of Warcraft Forever: 13 Gefährten, Raidabend am Donnerstag und entspannte gemeinsame Abenteuer.">
+  <title>Senioren Gaming – World of Warcraft Forever</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23090d12'/%3E%3Cpath d='M32 7 46 16l7 16-7 16-14 9-14-9-7-16 7-16Z' fill='none' stroke='%23d9a441' stroke-width='4'/%3E%3Cpath d='m22 38 10-20 10 20-10-5Z' fill='%23d9a441'/%3E%3C/svg%3E">
+  <link rel="preload" href="assets/hero.jpg" as="image">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="armory-style.css">
+</head>
+<body>
+  <a class="skip-link" href="#inhalt">Zum Inhalt springen</a>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#start" aria-label="Senioren Gaming – Startseite">
+      <span class="brand-mark" aria-hidden="true">SG</span>
+      <span><strong>Senioren Gaming</strong><small>Gemeinsam auf Abenteuer</small></span>
+    </a>
+
+    <button class="menu-button" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navigation" data-menu-button>
+      <span class="menu-lines" aria-hidden="true"></span>
+      <span class="menu-label">Menü</span>
+    </button>
+
+    <nav class="navigation" id="navigation" aria-label="Hauptnavigation" data-navigation>
+      <a class="active" href="#start"><span aria-hidden="true">⌂</span> Startseite</a>
+      <a href="#gilde"><span aria-hidden="true">⚑</span> Gilde</a>
+      <a href="#mitglieder"><span aria-hidden="true">♟</span> Mitglieder</a>
+      <a href="#termine"><span aria-hidden="true">▦</span> Termine</a>
+      <a href="#ziele"><span aria-hidden="true">◎</span> Loot &amp; Ziele</a>
+      <a href="#guides"><span aria-hidden="true">▤</span> Guides</a>
+      <a href="#galerie"><span aria-hidden="true">▧</span> Galerie</a>
+      <a href="#discord"><span aria-hidden="true">◉</span> Discord</a>
+    </nav>
+  </header>
+
+  <main id="inhalt">
+    <section class="hero" id="start" aria-labelledby="hero-title">
+      <div class="hero-shade"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span></span> 13 Gefährten · Eine Gilde <span></span></p>
+        <div class="crest" aria-hidden="true"><span>SG</span></div>
+        <h1 id="hero-title">Senioren <em>Gaming</em></h1>
+        <p class="hero-kicker">World of Warcraft Forever</p>
+        <p class="hero-copy">Eine ruhige, verlässliche Runde für World of Warcraft Forever: Donnerstagabend gemeinsam raiden, Ziele erreichen und gute Geschichten sammeln.</p>
+        <a class="button button-primary" href="#mitglieder">Unsere Gruppe entdecken</a>
+      </div>
+
+      <div class="virtues" aria-label="Was uns wichtig ist">
+        <div><span class="virtue-icon" aria-hidden="true">✦</span><strong>Gemeinsam spielen</strong><small>Niemand bleibt zurück</small></div>
+        <div><span class="virtue-icon" aria-hidden="true">⚔</span><strong>Raids erleben</strong><small>Donnerstag 20–23 Uhr</small></div>
+        <div><span class="virtue-icon" aria-hidden="true">⌖</span><strong>Ziele erreichen</strong><small>Schritt für Schritt</small></div>
+        <div><span class="virtue-icon" aria-hidden="true">♨</span><strong>Spaß haben</strong><small>Das Wichtigste zuerst</small></div>
+      </div>
+    </section>
+
+    <div class="page-shell">
+      <section class="panel guild-panel reveal" id="gilde" aria-labelledby="guild-title">
+        <div class="section-heading">
+          <span class="heading-icon" aria-hidden="true">⚑</span>
+          <div>
+            <p class="section-kicker">Unser Banner</p>
+            <h2 id="guild-title">Die Gilde</h2>
+          </div>
+          <span class="heading-rule"></span>
+        </div>
+        <p class="section-intro">Senioren Gaming ist eine Allianz-Gilde auf World of Warcraft Forever (EU). Gegründet 2026, gespielt im normalen Modus, gemütlich und gemeinsam.</p>
+        <div class="guild-grid">
+          <dl class="guild-facts" id="gilden-fakten"></dl>
+          <div class="guild-classes-box">
+            <h3 class="guild-sub">Klassenübersicht</h3>
+            <div class="guild-classes" id="gilden-klassen"></div>
+          </div>
+        </div>
+        <a class="arm-link" href="https://worldofwarcraft.blizzard.com/en-us/forever/eu/armory/guild/senioren-gaming" target="_blank" rel="noopener">Gildenseite im Armory öffnen</a>
+      </section>
+
+      <section class="panel group-panel reveal" id="mitglieder" aria-labelledby="group-title">
+        <div class="section-heading">
+          <span class="heading-icon" aria-hidden="true">✦</span>
+          <div>
+            <p class="section-kicker">Die Gefährten</p>
+            <h2 id="group-title">Unsere Gruppe</h2>
+          </div>
+          <span class="heading-rule"></span>
+          <p class="group-count"><strong>13</strong> Mitglieder</p>
+        </div>
+
+        <p class="section-intro">Alle Mitglieder auf einen Blick, mit Level, Klasse, Itemlevel und direktem Link zur Ausrüstung im Armory.</p>
+        <p class="arm-updated" id="armory-stand"></p>
+
+        <div class="member-grid" id="charaktere">
+        </div>
+      </section>
+
+      <div class="dashboard-row">
+        <section class="panel schedule-panel reveal" id="termine" aria-labelledby="schedule-title">
+          <div class="section-heading compact">
+            <span class="heading-icon" aria-hidden="true">▦</span>
+            <div><p class="section-kicker">Gemeinsam online</p><h2 id="schedule-title">Nächster Spielabend</h2></div>
+          </div>
+          <div class="schedule-main">
+            <div class="date-badge" aria-hidden="true"><span>Do</span><small>Raid</small></div>
+            <div>
+              <p class="placeholder-label">Raidabend</p>
+              <p class="schedule-time">Donnerstag · 20:00–23:00 Uhr</p>
+            </div>
+          </div>
+          <ul class="detail-list">
+            <li><span>Modus</span><strong>Raidgruppe</strong></li>
+            <li><span>Besetzung</span><strong>1 Tank · 2 Heiler · 6 DD</strong></li>
+            <li><span>Treffpunkt</span><strong>Discord</strong></li>
+          </ul>
+          <a class="button button-secondary" href="#discord">Zum Treffpunkt</a>
+        </section>
+
+        <section class="panel now-panel reveal" aria-labelledby="now-title">
+          <div class="section-heading compact">
+            <span class="heading-icon" aria-hidden="true">◈</span>
+            <div><p class="section-kicker">Stand der Dinge</p><h2 id="now-title">Aktuell</h2></div>
+          </div>
+          <ul class="quest-list">
+            <li class="done"><span></span>13 Mitglieder eingetragen</li>
+            <li class="done"><span></span>Rollen festgelegt</li>
+            <li class="done"><span></span>Raidabend Donnerstag 20:00–23:00</li>
+            <li><span></span>Gemeinsame Ziele auswählen</li>
+            <li class="done"><span></span>Discord-Link eingetragen</li>
+          </ul>
+          <blockquote>„Nicht die Jahre zählen, sondern die gemeinsamen Abenteuer.“</blockquote>
+        </section>
+      </div>
+
+      <div class="content-grid">
+        <section class="panel news-panel reveal" aria-labelledby="news-title">
+          <div class="section-heading compact">
+            <span class="heading-icon" aria-hidden="true">▤</span>
+            <div><p class="section-kicker">Aus der Gruppe</p><h2 id="news-title">Neuigkeiten</h2></div>
+          </div>
+          <article class="news-item featured">
+            <p class="news-meta">Neu · Webseite</p>
+            <h3>Willkommen bei Senioren Gaming</h3>
+            <p>Die Mitgliederliste ist aktualisiert: 13 Mitglieder mit Level, Rang und Berufen.</p>
+          </article>
+          <article class="news-item">
+            <p class="news-meta">Platzhalter · Datum offen</p>
+            <h3>Unser nächstes Abenteuer</h3>
+            <p>Jeden Donnerstag von 20:00 bis 23:00 Uhr steht der gemeinsame Raidabend im Kalender.</p>
+          </article>
+          <article class="news-item">
+            <p class="news-meta">Platzhalter · Datum offen</p>
+            <h3>Erfolge &amp; Erinnerungen</h3>
+            <p>Hier finden später eure echten Gruppenmomente ihren Platz.</p>
+          </article>
+        </section>
+
+        <section class="panel goals-panel reveal" id="ziele" aria-labelledby="goals-title">
+          <div class="section-heading compact">
+            <span class="heading-icon" aria-hidden="true">◎</span>
+            <div><p class="section-kicker">Gemeinsamer Weg</p><h2 id="goals-title">Aktuelle Ziele</h2></div>
+          </div>
+          <p class="placeholder-note">Aktuelle Gruppenziele</p>
+          <ul class="goal-list">
+            <li><label><input type="checkbox" checked> <span>Rollenverteilung abschließen</span></label></li>
+            <li><label><input type="checkbox" checked> <span>Raidabend festlegen</span></label></li>
+            <li><label><input type="checkbox"> <span>Gemeinsamen Inhalt auswählen</span></label></li>
+            <li><label><input type="checkbox"> <span>Wünsche der Gruppe sammeln</span></label></li>
+          </ul>
+          <div class="motto-card"><span>✦</span><p>Kein Stress. Kein Wettrennen.<br><strong>Nur gute Abende.</strong></p></div>
+        </section>
+
+        <section class="panel guides-panel reveal" id="guides" aria-labelledby="guides-title">
+          <div class="section-heading compact">
+            <span class="heading-icon" aria-hidden="true">▤</span>
+            <div><p class="section-kicker">Wissen teilen</p><h2 id="guides-title">Guides</h2></div>
+          </div>
+          <p class="section-intro">Platz für eure eigenen Notizen, Boss-Tipps und hilfreichen Links.</p>
+          <div class="guide-empty">
+            <span aria-hidden="true">✎</span>
+            <h3>Noch keine Guides eingetragen</h3>
+            <p>Der erste gemeinsame Tipp kann hier später ergänzt werden.</p>
+          </div>
+        </section>
+
+        <section class="panel gallery-panel reveal" id="galerie" aria-labelledby="gallery-title">
+          <div class="section-heading compact">
+            <span class="heading-icon" aria-hidden="true">▧</span>
+            <div><p class="section-kicker">Unsere Momente</p><h2 id="gallery-title">Galerie</h2></div>
+          </div>
+          <div class="gallery" data-gallery>
+            <div class="gallery-stage">
+              <figure class="gallery-slide active">
+                <img src="assets/gallery-campfire.jpg" alt="Illustrative Fantasy-Szene: vier ältere Abenteurer sitzen gemeinsam am Lagerfeuer" width="1536" height="1024" loading="lazy">
+                <figcaption>Gemeinsam klingt jeder Abend besser. <small>Illustrative Fantasy-Szene</small></figcaption>
+              </figure>
+              <figure class="gallery-slide">
+                <img src="assets/gallery-ruins.jpg" alt="Illustrative Fantasy-Szene: vier Abenteurer überqueren eine Brücke zu alten Ruinen" width="1780" height="1024" loading="lazy">
+                <figcaption>Der Weg zählt genauso wie das Ziel. <small>Illustrative Fantasy-Szene</small></figcaption>
+              </figure>
+              <button class="gallery-control prev" type="button" aria-label="Vorheriges Bild" data-gallery-prev>‹</button>
+              <button class="gallery-control next" type="button" aria-label="Nächstes Bild" data-gallery-next>›</button>
+            </div>
+            <div class="gallery-dots" role="group" aria-label="Galeriebilder auswählen">
+              <button class="active" type="button" aria-label="Bild 1 anzeigen" aria-pressed="true" data-gallery-dot="0"></button>
+              <button type="button" aria-label="Bild 2 anzeigen" aria-pressed="false" data-gallery-dot="1"></button>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="discord-banner reveal" id="discord" aria-labelledby="discord-title">
+        <div class="discord-orb" aria-hidden="true">◉</div>
+        <div><p class="section-kicker">Treffpunkt der Gruppe</p><h2 id="discord-title">Auf Discord verabreden</h2><p>Über den Discord-Link kommt ihr direkt zum Treffpunkt für Raidabend, Absprachen und gemeinsame Planung.</p></div>
+        <a class="button button-primary" href="https://discord.gg/" target="_blank" rel="noopener noreferrer">Discord öffnen</a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-mark" aria-hidden="true">SG</div>
+    <div><strong>Senioren Gaming</strong><p>World of Warcraft Forever · 9 Spieler · Donnerstag 20:00–23:00 Uhr</p></div>
+    <p class="copyright">© <span data-year></span> Senioren Gaming · Fanprojekt ohne Verbindung zu Spieleherstellern</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="members.js"></script>
+  <noscript><p style="text-align:center;padding:16px">Für die Mitgliederliste wird JavaScript benötigt.</p></noscript>
+</body>
+</html>

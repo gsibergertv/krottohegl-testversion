@@ -1,0 +1,39 @@
+.arm-card { display: flex; flex-direction: column; gap: 12px; background: linear-gradient(160deg, #0b1220 0%, #141a2b 55%, #0a0f1a 100%); border: 1px solid #2c3550; }
+.arm-head { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+.arm-crest { font-size: 1.8rem; line-height: 1; filter: drop-shadow(0 0 4px #d9a44180); }
+.arm-title { flex: 1 1 160px; min-width: 0; }
+.arm-name { margin: 0; font-size: 1.35rem; font-weight: 700; letter-spacing: .02em; overflow-wrap: anywhere; }
+.arm-meta { margin: 2px 0 0; font-size: .85rem; color: #e8e8e8; }
+.arm-guild { color: #d9a441; display: block; white-space: nowrap; }
+.arm-ilvl { color: #d9a441; font-size: 1.1rem; white-space: nowrap; }
+.arm-info { display: grid; gap: 4px; margin: 0; padding-top: 8px; border-top: 1px solid #2c3550; }
+.arm-info div { display: flex; justify-content: space-between; gap: 12px; }
+.arm-info dt { color: #d9a441; text-transform: uppercase; font-size: .72rem; letter-spacing: .08em; }
+.arm-info dd { margin: 0; text-align: right; overflow-wrap: anywhere; }
+.arm-link { align-self: flex-start; background: #f8b700; color: #1a1200; font-weight: 700; font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; padding: 8px 12px; text-decoration: none; }
+.arm-link:hover, .arm-link:focus-visible { background: #ffd04d; }
+.arm-pic { aspect-ratio: 390 / 500; width: min(100%, 300px); align-self: center; overflow: hidden; border: 1px solid #2c3550; background: #0a0f1a; }
+.arm-pic img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+.guild-facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin: 16px 0; }
+.guild-facts div { background: #0b1220; border: 1px solid #2c3550; padding: 10px 12px; }
+.guild-facts dt { color: #d9a441; text-transform: uppercase; font-size: .72rem; letter-spacing: .08em; }
+.guild-facts dd { margin: 2px 0 0; overflow-wrap: anywhere; }
+.guild-sub { margin: 18px 0 8px; }
+.guild-classes { display: grid; gap: 6px; margin-bottom: 18px; max-width: 520px; }
+.gc-row { display: grid; grid-template-columns: 90px 1fr 24px; align-items: center; gap: 10px; }
+.gc-bar { background: #0b1220; border: 1px solid #2c3550; height: 14px; }
+.gc-bar i { display: block; height: 100%; }
+.gc-num { text-align: right; }
+
+.guild-grid { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 24px 32px; align-items: start; margin: 16px 0 20px; }
+.guild-grid .guild-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; }
+.guild-grid .guild-sub { margin-top: 0; }
+.guild-grid .guild-classes { margin-bottom: 0; max-width: none; }
+.arm-link { margin-top: auto; }
+.arm-card { height: 100%; }
+.arm-card:hover { border-color: #d9a44180; }
+.arm-pic-empty { display: grid; place-items: center; color: #6c7590; font-size: .85rem; text-transform: uppercase; letter-spacing: .1em; background: repeating-linear-gradient(135deg, #0a0f1a, #0a0f1a 10px, #0d1424 10px, #0d1424 20px); }
+.arm-link:focus-visible, .arm-card a:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+@media (max-width: 760px) { .guild-grid { grid-template-columns: 1fr; } .guild-grid .guild-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.arm-pic-render img { object-fit: contain; object-position: center bottom; }
+.arm-updated { color: #8a93ab; font-size: .8rem; margin-top: -4px; }
