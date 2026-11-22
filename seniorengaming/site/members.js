@@ -48,7 +48,7 @@
       var master = list.filter(function (x) { return /meister/i.test(x.rank); })[0];
       var avg = Math.round(list.reduce(function (n, x) { return n + x.level; }, 0) / list.length);
       var top = list[0];
-      [["Fraktion", "Allianz"], ["Mitglieder", String(all.length)], ["Gildenmeister", master ? master.name : "–"], ["Höchstes Level", top.name + " (" + top.level + ")"], ["Ø Level", String(avg)], ["Gegründet", "2026"]].forEach(function (p) {
+      [["Fraktion", "Allianz"], ["Mitglieder", String(list.length)], ["Gildenmeister", master ? master.name : "–"], ["Höchstes Level", top.name + " (" + top.level + ")"], ["Ø Level", String(avg)], ["Gegründet", "2026"]].forEach(function (p) {
         var d = el("div"); d.appendChild(el("dt", null, p[0])); d.appendChild(el("dd", null, p[1])); facts.appendChild(d);
       });
     }
@@ -65,6 +65,7 @@
     }
     var stand = document.getElementById("armory-stand");
     if (stand && data.updated) { var p = data.updated.split("-"); stand.textContent = "Daten aus dem Armory, Stand " + p[2] + "." + p[1] + "." + p[0]; }
+    var hc = document.getElementById("hero-count"); if (hc) hc.textContent = list.length;
     var c = document.querySelector(".group-count strong"); if (c) c.textContent = list.length;
   }).catch(function () { grid.textContent = "Mitgliederliste konnte nicht geladen werden."; });
 })();
