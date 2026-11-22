@@ -11,18 +11,20 @@
       "klass": "Priester",
       "ilvl": 35,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/24/6642968-main-raw.png",
-      "armoryUpdated": "2026-11-22T08:58:06Z"
+      "armoryUpdated": "2026-11-22T12:31:37Z",
+      "spec": "Schattenmagie 34 · Disziplin 2"
     },
     {
       "name": "Bruce Willess",
-      "level": 51,
+      "level": 52,
       "rank": "Offizier",
-      "profession": "Lederverarbeitung 225 / Kürschnerei 297",
+      "profession": "Lederverarbeitung 225 / Kürschnerei 299",
       "race": "Zwerg",
       "klass": "Schamane",
-      "ilvl": 45,
+      "ilvl": 47,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/139/4689035-main-raw.png",
-      "armoryUpdated": "2026-11-22T00:40:37Z"
+      "armoryUpdated": "2026-11-22T14:44:37Z",
+      "spec": "Verstärkung 28 · Wiederherstellung 11 · Elementarkampf 4"
     },
     {
       "name": "Nelumbo Lutea",
@@ -33,7 +35,8 @@
       "klass": "Paladin",
       "ilvl": 38,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/191/9569471-main-raw.png",
-      "armoryUpdated": "2026-11-22T08:49:36Z"
+      "armoryUpdated": "2026-11-22T16:28:28Z",
+      "spec": "Schutz 24 · Vergeltung 12"
     },
     {
       "name": "Sam Pelegrino",
@@ -44,51 +47,56 @@
       "klass": "Krieger",
       "ilvl": 34,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/214/4393686-main-raw.png",
-      "armoryUpdated": "2026-11-22T00:42:30Z"
+      "armoryUpdated": "2026-11-22T00:42:30Z",
+      "spec": "Schutz 31 · Furor 4 · Waffen 2"
     },
     {
       "name": "Bingsi Schildwall",
-      "level": 36,
+      "level": 37,
       "rank": "Offizier",
-      "profession": "Bergbau 147 / Schmiedekunst 90",
+      "profession": "Bergbau 150 / Schmiedekunst 90",
       "race": "Gnom",
       "klass": "Krieger",
-      "ilvl": 25,
+      "ilvl": 28,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/243/4221683-main-raw.png",
-      "armoryUpdated": "2026-11-21T07:32:51Z"
+      "armoryUpdated": "2026-11-22T12:57:33Z",
+      "spec": "Schutz 28"
     },
     {
       "name": "Eisblock Frostbringer",
-      "level": 39,
+      "level": 40,
       "rank": "Offizier",
       "profession": "Schneiderei 150 / Verzauberkunst 140",
       "race": "Gnom",
       "klass": "Magier",
       "ilvl": 27,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/209/420305-main-raw.png",
-      "armoryUpdated": "2026-11-22T00:18:54Z"
+      "armoryUpdated": "2026-11-22T14:48:36Z",
+      "spec": "Frost 23 · Arkan 8"
     },
     {
       "name": "Alishaa Glutbringer",
       "level": 38,
       "rank": "Offizier",
-      "profession": "Alchemie 254 / Kräuterkunde 247",
+      "profession": "Alchemie 255 / Kräuterkunde 251",
       "race": "Himmelsgeborene des Hohen Ordens",
       "klass": "Magier",
       "ilvl": 28,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/52/583220-main-raw.png",
-      "armoryUpdated": "2026-11-21T23:18:25Z"
+      "armoryUpdated": "2026-11-22T10:39:19Z",
+      "spec": "Feuer 22 · Arkan 7"
     },
     {
       "name": "Lunara Moonshine",
-      "level": 34,
+      "level": 35,
       "rank": "Offizier",
-      "profession": "Lederverarbeitung 150 / Kürschnerei 224",
+      "profession": "Lederverarbeitung 150 / Kürschnerei 225",
       "race": "Nachtelfe",
       "klass": "Druide",
-      "ilvl": 26,
+      "ilvl": 27,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/149/7384981-main-raw.png",
-      "armoryUpdated": "2026-11-20T18:47:16Z"
+      "armoryUpdated": "2026-11-22T16:02:33Z",
+      "spec": "Wilder Kampf 26"
     },
     {
       "name": "Genz Lau",
@@ -99,7 +107,8 @@
       "klass": "Jäger",
       "ilvl": 27,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/103/18186855-main-raw.png",
-      "armoryUpdated": "2026-11-20T20:25:57Z"
+      "armoryUpdated": "2026-11-20T20:25:57Z",
+      "spec": "Tierherrschaft 23"
     },
     {
       "name": "Klothilde Cleef",
@@ -110,7 +119,8 @@
       "klass": "Schurke",
       "ilvl": 14,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/83/12021331-main-raw.png",
-      "armoryUpdated": "2026-11-17T17:28:30Z"
+      "armoryUpdated": "2026-11-17T17:28:30Z",
+      "spec": "Meucheln 14"
     },
     {
       "name": "Dave Danger",
@@ -121,7 +131,8 @@
       "klass": "Paladin",
       "ilvl": 12,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/242/9211890-main-raw.png",
-      "armoryUpdated": "2026-11-06T23:45:01Z"
+      "armoryUpdated": "2026-11-06T23:45:01Z",
+      "spec": "Vergeltung 11"
     },
     {
       "name": "Lux Frostbringer",

@@ -32,7 +32,7 @@
       };
       pic.appendChild(img); card.appendChild(pic);
       var dl = el("dl", "arm-info");
-      [["Rang", m.rank]].concat(m.profession ? [["Beruf", m.profession]] : []).forEach(function (p) {
+      [["Rang", m.rank]].concat(m.spec ? [["Skillung", m.spec]] : []).concat(m.profession ? [["Beruf", m.profession]] : []).forEach(function (p) {
         var d = el("div"); d.appendChild(el("dt", null, p[0])); d.appendChild(el("dd", null, p[1])); dl.appendChild(d);
       });
       card.appendChild(dl);

@@ -36,6 +36,8 @@ def main(path):
             t = (p.get("tiers") or [{}])[0]
             profs.append(f"{PROF.get(p.get('name'), p.get('name'))} {t.get('skillPoints', '')}".strip())
         if profs: new["profession"] = " / ".join(profs)
+        specs = sorted([x for x in (c.get("specs") or []) if x.get("spentPoints")], key=lambda x: -x["spentPoints"])
+        if specs: new["spec"] = " · ".join(f"{x['name']} {x['spentPoints']}" for x in specs)
         img = ((c.get("media") or {}).get("main-raw") or {}).get("url")
         if img: new["render"] = img
         upd = (c.get("lastUpdatedTimestamp") or {}).get("iso8601")
