@@ -4,36 +4,36 @@
   "members": [
     {
       "name": "Fearly Grantlbart",
-      "level": 43,
+      "level": 45,
       "rank": "Gildenmeister",
-      "profession": "Schneiderei 170 / Verzauberkunst 200",
+      "profession": "Schneiderei 174 / Verzauberkunst 225",
       "race": "Zwerg",
       "klass": "Priester",
-      "ilvl": 31,
+      "ilvl": 35,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/24/6642968-main-raw.png",
-      "armoryUpdated": "2026-11-20T14:23:02Z"
+      "armoryUpdated": "2026-11-22T08:58:06Z"
     },
     {
       "name": "Bruce Willess",
-      "level": 48,
+      "level": 51,
       "rank": "Offizier",
-      "profession": "Lederverarbeitung 215 / Kürschnerei 289",
+      "profession": "Lederverarbeitung 225 / Kürschnerei 297",
       "race": "Zwerg",
       "klass": "Schamane",
-      "ilvl": 35,
+      "ilvl": 45,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/139/4689035-main-raw.png",
-      "armoryUpdated": "2026-11-20T01:59:48Z"
+      "armoryUpdated": "2026-11-22T00:40:37Z"
     },
     {
       "name": "Nelumbo Lutea",
-      "level": 43,
+      "level": 45,
       "rank": "Offizier",
-      "profession": "Bergbau 211 / Schmiedekunst 196",
+      "profession": "Bergbau 218 / Schmiedekunst 200",
       "race": "Mensch",
       "klass": "Paladin",
-      "ilvl": 37,
+      "ilvl": 38,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/191/9569471-main-raw.png",
-      "armoryUpdated": "2026-11-20T21:20:38Z"
+      "armoryUpdated": "2026-11-22T08:49:36Z"
     },
     {
       "name": "Sam Pelegrino",
@@ -44,7 +44,7 @@
       "klass": "Krieger",
       "ilvl": 34,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/214/4393686-main-raw.png",
-      "armoryUpdated": "2026-11-19T22:09:26Z"
+      "armoryUpdated": "2026-11-22T00:42:30Z"
     },
     {
       "name": "Bingsi Schildwall",
@@ -55,29 +55,29 @@
       "klass": "Krieger",
       "ilvl": 25,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/243/4221683-main-raw.png",
-      "armoryUpdated": "2026-11-19T18:44:15Z"
+      "armoryUpdated": "2026-11-21T07:32:51Z"
     },
     {
       "name": "Eisblock Frostbringer",
-      "level": 36,
+      "level": 39,
       "rank": "Offizier",
-      "profession": "Schneiderei 133 / Verzauberkunst 124",
+      "profession": "Schneiderei 150 / Verzauberkunst 140",
       "race": "Gnom",
       "klass": "Magier",
-      "ilvl": 26,
+      "ilvl": 27,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/209/420305-main-raw.png",
-      "armoryUpdated": "2026-11-19T20:14:55Z"
+      "armoryUpdated": "2026-11-22T00:18:54Z"
     },
     {
       "name": "Alishaa Glutbringer",
-      "level": 34,
+      "level": 38,
       "rank": "Offizier",
-      "profession": "Alchemie 222 / Kräuterkunde 225",
+      "profession": "Alchemie 254 / Kräuterkunde 247",
       "race": "Himmelsgeborene des Hohen Ordens",
       "klass": "Magier",
-      "ilvl": 27,
+      "ilvl": 28,
       "render": "https://render.worldofwarcraft.com/forever-eu/character/52/583220-main-raw.png",
-      "armoryUpdated": "2026-11-18T21:02:51Z"
+      "armoryUpdated": "2026-11-21T23:18:25Z"
     },
     {
       "name": "Lunara Moonshine",
@@ -141,5 +141,5 @@
       "profession": ""
     }
   ],
-  "updated": "2026-11-20"
+  "updated": "2026-11-22"
 }
