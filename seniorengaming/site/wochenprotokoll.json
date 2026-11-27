@@ -1,0 +1,202 @@
+{
+  "weeks": [
+    {
+      "date": "2026-11-27",
+      "from": "2026-11-20",
+      "to": "2026-11-27",
+      "changes": [
+        {
+          "name": "Alishaa Glutbringer",
+          "klass": "Magier",
+          "notes": [],
+          "level": [
+            34,
+            41
+          ],
+          "ilvl": [
+            27,
+            28
+          ],
+          "professions": [
+            [
+              "Alchemie",
+              222,
+              274
+            ],
+            [
+              "Kräuterkunde",
+              225,
+              264
+            ]
+          ]
+        },
+        {
+          "name": "Bruce Willess",
+          "klass": "Schamane",
+          "notes": [],
+          "level": [
+            48,
+            54
+          ],
+          "ilvl": [
+            35,
+            47
+          ],
+          "professions": [
+            [
+              "Lederverarbeitung",
+              215,
+              225
+            ],
+            [
+              "Kürschnerei",
+              289,
+              300
+            ]
+          ]
+        },
+        {
+          "name": "Sam Pelegrino",
+          "klass": "Krieger",
+          "notes": [],
+          "level": [
+            41,
+            47
+          ],
+          "professions": [
+            [
+              "Bergbau",
+              249,
+              257
+            ]
+          ]
+        },
+        {
+          "name": "Eisblock Frostbringer",
+          "klass": "Magier",
+          "notes": [],
+          "level": [
+            36,
+            42
+          ],
+          "ilvl": [
+            26,
+            27
+          ],
+          "professions": [
+            [
+              "Schneiderei",
+              133,
+              153
+            ],
+            [
+              "Verzauberkunst",
+              124,
+              140
+            ]
+          ]
+        },
+        {
+          "name": "Fearly Grantlbart",
+          "klass": "Priester",
+          "notes": [],
+          "level": [
+            43,
+            48
+          ],
+          "ilvl": [
+            31,
+            35
+          ],
+          "professions": [
+            [
+              "Schneiderei",
+              170,
+              225
+            ],
+            [
+              "Verzauberkunst",
+              200,
+              232
+            ]
+          ]
+        },
+        {
+          "name": "Nelumbo Lutea",
+          "klass": "Paladin",
+          "notes": [],
+          "level": [
+            43,
+            48
+          ],
+          "ilvl": [
+            37,
+            38
+          ],
+          "professions": [
+            [
+              "Bergbau",
+              211,
+              228
+            ],
+            [
+              "Schmiedekunst",
+              196,
+              214
+            ]
+          ]
+        },
+        {
+          "name": "Lunara Moonshine",
+          "klass": "Druide",
+          "notes": [],
+          "level": [
+            34,
+            37
+          ],
+          "ilvl": [
+            26,
+            27
+          ],
+          "professions": [
+            [
+              "Lederverarbeitung",
+              150,
+              151
+            ],
+            [
+              "Kürschnerei",
+              224,
+              247
+            ]
+          ]
+        },
+        {
+          "name": "Bingsi Schildwall",
+          "klass": "Krieger",
+          "notes": [],
+          "level": [
+            36,
+            38
+          ],
+          "ilvl": [
+            25,
+            28
+          ],
+          "professions": [
+            [
+              "Bergbau",
+              147,
+              153
+            ],
+            [
+              "Schmiedekunst",
+              90,
+              134
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -37,3 +37,20 @@
 @media (max-width: 760px) { .guild-grid { grid-template-columns: 1fr; } .guild-grid .guild-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 .arm-pic-render img { object-fit: contain; object-position: center bottom; }
 .arm-updated { color: #8a93ab; font-size: .8rem; margin-top: -4px; }
+
+.wp-title { margin: 8px 0 14px; color: #d9a441; letter-spacing: .04em; }
+.wp-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 18px; }
+.wp-stat { background: #0b1220; border: 1px solid #2c3550; padding: 12px 14px; display: grid; gap: 2px; min-width: 0; }
+.wp-stat-label { color: #d9a441; text-transform: uppercase; font-size: .72rem; letter-spacing: .08em; }
+.wp-stat strong { font-size: 1.3rem; overflow-wrap: anywhere; }
+.wp-stat small { color: #8a93ab; }
+.wp-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.wp-row { display: grid; grid-template-columns: minmax(150px, 210px) 1fr; gap: 8px 16px; align-items: center; padding: 10px 14px; background: #0b1220; border: 1px solid #2c3550; }
+.wp-name { font-weight: 700; overflow-wrap: anywhere; }
+.wp-chips { display: flex; flex-wrap: wrap; gap: 6px; min-width: 0; }
+.wp-chip { font-size: .8rem; padding: 3px 8px; border: 1px solid #2c3550; background: #141a2b; color: #d6dae6; font-variant-numeric: tabular-nums; }
+.wp-chip-strong { border-color: #d9a44180; color: #f2c66d; }
+.wp-old { margin-top: 14px; border-top: 1px solid #2c3550; padding-top: 10px; }
+.wp-old summary { cursor: pointer; color: #d9a441; padding: 6px 0; }
+.wp-empty { color: #8a93ab; }
+@media (max-width: 600px) { .wp-row { grid-template-columns: 1fr; } }

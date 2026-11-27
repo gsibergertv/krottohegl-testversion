@@ -32,6 +32,7 @@
       <a class="active" href="#start"><span aria-hidden="true">⌂</span> Startseite</a>
       <a href="#gilde"><span aria-hidden="true">⚑</span> Gilde</a>
       <a href="#mitglieder"><span aria-hidden="true">♟</span> Mitglieder</a>
+      <a href="#wochenprotokoll"><span aria-hidden="true">✎</span> Wochenprotokoll</a>
       <a href="#termine"><span aria-hidden="true">▦</span> Termine</a>
       <a href="#ziele"><span aria-hidden="true">◎</span> Loot &amp; Ziele</a>
       <a href="#guides"><span aria-hidden="true">▤</span> Guides</a>
@@ -97,6 +98,19 @@
 
         <div class="member-grid" id="charaktere">
         </div>
+      </section>
+
+      <section class="panel protocol-panel reveal" id="wochenprotokoll" aria-labelledby="protocol-title">
+        <div class="section-heading">
+          <span class="heading-icon" aria-hidden="true">✎</span>
+          <div>
+            <p class="section-kicker">Jeden Freitag neu</p>
+            <h2 id="protocol-title">Wochenprotokoll</h2>
+          </div>
+          <span class="heading-rule"></span>
+        </div>
+        <p class="section-intro">Wer hat in der letzten Woche Level, Ausrüstung und Berufe verbessert? Automatisch aus dem Armory erstellt, für alle Charaktere ab Level 20.</p>
+        <div id="protokoll-inhalt"><p class="wp-empty">Wochenprotokoll wird geladen …</p></div>
       </section>
 
       <div class="dashboard-row">
@@ -229,6 +243,7 @@
 
   <script src="script.js"></script>
   <script src="members.js"></script>
+  <script src="protocol.js"></script>
   <noscript><p style="text-align:center;padding:16px">Für die Mitgliederliste wird JavaScript benötigt.</p></noscript>
 </body>
 </html>
